@@ -8,4 +8,4 @@ En este repositorio encontraras el documento virgen en la carpeta 'input' y un j
 En el jupyter notebook encontrarás todos los pasos de mi trabajo acompañados de comentarios que guian toda la trayectoria hasta el final, donde estructuro un nuevo dataframe con datos limpios que ayudarán a dar respuesta a la hipótesis.
 
 #### ¡AVISO! 
-Este proyecto todavía no tiene una respuesta para la hipótesis planteada, pero cuenta con datos limpios y estructurados que ayudarán a concluir una respuesta final, tanto para esta hipótesis como para muchas otras posibles propuestas. Cualquier contribución o propuesta que ayude a la construcción y enriquecimiento del proyecto será bien recibida.
+Este proyecto todavía no tiene una respuesta para la hipótesis planteada, pero cuenta con datos limpios y estructurados que ayudarán a concluir una respuesta final, tanto para esta hipótesis como para otras muchas. Cualquier contribución o propuesta que ayude a la construcción y enriquecimiento del proyecto será bien recibida.

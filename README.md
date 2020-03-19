@@ -9,8 +9,11 @@ Como ya hemos comentado en la Intro, el objetivo del proyecto se basa en la limp
 
 ## Métodos
 Los metodos que he utilizado para la limpieza de datos son:
-- Visualización de los datos con `df.columns, df.describe() y df.dtypes`  
-- Mapeado de datos nulos:
+- Visualización de los datos con   
+
+`df.columns, df.describe() y df.dtypes`  
+- Mapeado de datos nulos con  
+
 '''cols = df.columns[:]
 colours = ['#000099', '#ffff00'] # amarillo == valores nulos // azul == valores no nulos
 sns.heatmap(df[cols].isnull(), cmap=sns.color_palette(colours))'''  

@@ -1,5 +1,5 @@
 # Global Shark Attack Incidents
-![jaws](img/jaw.jpg)
+![jaws](https://i1.wp.com/codigoespagueti.com/wp-content/uploads/2015/06/jaws-6.jpg?fit=1080%2C608&quality=80&ssl=1)
 ## Intro
 El objetivo de este proyecto es tomar decisiones sobre como limpiar los datos de [Global Shark Attack Incidents](https://www.kaggle.com/teajay/global-shark-attacks/version/1), un dataset alojado en la web de kaggle.
 

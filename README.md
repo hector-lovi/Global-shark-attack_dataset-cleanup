@@ -1,11 +1,30 @@
-# ¿Mueren más hombres que mujeres por ataque de tiburón?
-#### En este projecto buscamos respuesta a esa pregunta:
+# Global Shark Attack Incidents
+![jaws](https://i1.wp.com/codigoespagueti.com/wp-content/uploads/2015/06/jaws-6.jpg?fit=1080%2C608&quality=80&ssl=1)
+## Intro
+El objetivo de este proyecto es tomar decisiones sobre como limpiar los datos de [Global Shark Attack Incidents](https://www.kaggle.com/teajay/global-shark-attacks/version/1), un dataset alojado en la web de kaggle con registros sobre ataques de tiburones.
 
-Ha llegado a mis manos un documento csv de kaggle.com llamado 'Global Shark Attack Incidents' con un amplio registro de personas que han sufrido un ataque de tiburón. La información que proporciona dicho documento es muy amplia, aunque muchos de estos datos contienen valores nulos, otros son ambiguos u ocupan un lugar que no les correcponde. Por ello, como primer paso lógico, he decidido limpiar los datos para poder ofrecer una respuesta lo más fiel posible a la realidad.
+## Hipótesis
+***¿Son los ataques de tiburones más usuales en hombres que en mujeres?***  
+Como ya hemos comentado en la Intro, el objetivo del proyecto se basa en la limpieza de datos, sin embargo vamos a marcar un objetivo para poder tomar decisiones enfocadas a una misma dirección.
 
-En este repositorio encontraras el documento virgen en la carpeta 'input' y un jupyter notebook con todo el proceso de trabajo junto a los resultados finales en la carpeta 'output'. 
+## Métodos
+Los metodos que he utilizado para la limpieza de datos son:  
+- Lectura de ficheros y creación de DataFrames (Pandas).
+- Visual de los datos en crudo con `df.columns, df.describe() y df.dtypes`.  
+- Mapeado de datos nulos:  
+```
+cols = df.columns[:]
+colours = ['#000099', '#ffff00'] # amarillo == valores nulos // azul == valores no nulos
+sns.heatmap(df[cols].isnull(), cmap=sns.color_palette(colours))
+```  
+- Transformación de columnas a través de funciones.  
+- Dropeo de columnas.  
+- Regex.  
+- Plots con matplotlib.  
+- Volcado de datos en csv.  
 
-En el jupyter notebook encontrarás todos los pasos de mi trabajo acompañados de comentarios que guian toda la trayectoria hasta el final, donde estructuro un nuevo dataframe con datos limpios que ayudarán a dar respuesta a la hipótesis.
+## Conclusiones
+Existe todo un universo de posibilidades en cuanto a limpieza de datos se refiere, y muchas librerias que pueden hacernos la vida muy facil, sin embargo destacaría **Pandas** por encima del resto.  
 
-#### ¡AVISO! 
-Este proyecto todavía no tiene una respuesta para la hipótesis planteada, pero cuenta con datos limpios y estructurados que ayudarán a concluir una respuesta final, tanto para esta hipótesis como para otras muchas. Cualquier contribución o propuesta que ayude a la construcción y enriquecimiento del proyecto será bien recibida.
+En cuanto al trato de resultados nulos, no existen parametros fijos sobre como debemos manipular dichos datos. La forma mas eficiente es hacer una valoración en función del objetivo que queramos alcanzar.
+

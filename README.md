@@ -8,11 +8,20 @@ El objetivo de este proyecto es tomar decisiones sobre como limpiar los datos de
 Como ya hemos comentado en la Intro, el objetivo del proyecto se basa en la limpieza de datos, sin embargo vamos a marcar un objetivo para poder tomar decisiones enfocadas a una misma dirección.
 
 ## Métodos
-Los metodos que he utilizado para la limpieza de datos son:
-- Visualización de los datos con `df.columns, df.describe() y df.dtypes`  
+Los metodos que he utilizado para la limpieza de datos son:  
+- Lectura de ficheros y creación de DataFrames (Pandas).
+- Visual de los datos en crudo con `df.columns, df.describe() y df.dtypes`.  
 - Mapeado de datos nulos:  
 ```
 cols = df.columns[:]
 colours = ['#000099', '#ffff00'] # amarillo == valores nulos // azul == valores no nulos
 sns.heatmap(df[cols].isnull(), cmap=sns.color_palette(colours))
-```
+```  
+- Transformación de columnas a través de funciones.  
+- Dropeo de columnas.  
+- Regex.  
+- Plots con matplotlib.  
+- Volcado de datos en csv.  
+
+## Conclusiones
+

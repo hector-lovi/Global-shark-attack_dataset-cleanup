@@ -24,6 +24,7 @@ sns.heatmap(df[cols].isnull(), cmap=sns.color_palette(colours))
 - Volcado de datos en csv.  
 
 ## Conclusiones
-Existe todo un universo de posibilidades en cuanto a limpieza de datos se refiere. Existen muchas librerias que pueden hacernos la vida muy facil, sin embargo destacaría Pandas por encima del resto.  
-En cuanto al trato de resultados nulos, no existen parametros fijos sobre como debemos manipular dichos datos. La forma mas eficiente es hacer una valoración en función de la dirección hacia la que hayamos enfocado nuestra investigación u objetivo.
+Existe todo un universo de posibilidades en cuanto a limpieza de datos se refiere, y muchas librerias que pueden hacernos la vida muy facil, sin embargo destacaría **Pandas** por encima del resto.  
+
+En cuanto al trato de resultados nulos, no existen parametros fijos sobre como debemos manipular dichos datos. La forma mas eficiente es hacer una valoración en función del objetivo que queramos alcanzar.
 
